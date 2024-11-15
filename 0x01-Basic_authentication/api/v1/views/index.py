@@ -32,4 +32,3 @@ def test_error() -> None:
     GET /api/v1/unauthorized
     """
     abort(401)
-    
