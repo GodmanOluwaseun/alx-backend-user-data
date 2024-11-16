@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+Class template for all authentication system to be implemented.
+"""
+
 
 from flask import request
 
@@ -8,13 +12,11 @@ class Auth():
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
         """Public method"""
         return False
-    
 
     def authorization_header(self, request=None) -> str:
         """Public method."""
         return None
-    
-    
+
     def current_user(self, request=None) -> TypeVar('User'):
         """Public method."""
         return None
