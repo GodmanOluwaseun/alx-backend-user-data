@@ -5,6 +5,7 @@ Class template for all authentication system to be implemented.
 
 
 from flask import request
+from typing import List, TypeVar
 
 
 class Auth():
