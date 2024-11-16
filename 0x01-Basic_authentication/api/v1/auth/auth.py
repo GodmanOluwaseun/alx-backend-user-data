@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""
+"""auth
 Class template for all authentication system to be implemented.
 """
 
