@@ -20,8 +20,10 @@ class Auth():
         if excluded_paths is None or not excluded_paths:
             return True
 
+        normal_path = path.rstrip('/')
+
         for paths in excluded_paths:
-            if fnmatch.fnmatch(path, paths):
+            if fnmatch.fnmatch(normal_path, paths.rstrip('/')):
                 return False
 
         return True
