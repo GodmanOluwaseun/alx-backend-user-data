@@ -41,7 +41,7 @@ def forbidden(error) -> str:
 
 @app.before_request
 def bef_request():
-    """Filters each request"""
+    """Filters each request for authentication"""
     if auth is None:
         return
 
