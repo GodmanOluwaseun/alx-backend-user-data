@@ -50,7 +50,7 @@ def bef_request():
         '/api/v1/forbidden/'
     ]
 
-    if auth.require_auth(request.path, paths):
+    if not auth.require_auth(request.path, paths):
         return
 
     if auth.authorization_header(request) is None:
